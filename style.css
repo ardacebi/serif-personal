@@ -1,0 +1,266 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+h1 {
+  color:white;
+  font-family: "Vidaloka";
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Vidaloka";
+  color:white;
+  font-weight: normal;
+}
+
+
+h3 {
+  font-family: "Montserrat";
+  color:white;
+}
+
+
+h4 {
+  font-family: "Montserrat";
+  color:white;
+}
+
+p {
+  color:white;
+  font-family:"Montserrat";
+}
+
+.landingname {
+  margin-left:100px;
+  margin-top:100px;
+  font-size: 100px;
+}
+
+.landingdescription {
+  margin-left:100px;
+  margin-top:30px;
+  font-size:130px;
+}
+
+.secondary {
+  margin-left:200px;
+  margin-top:80px;
+  font-size: 60px;
+}
+
+.secondarysub {
+  font-size:45px;
+  margin-left:200px;
+  margin-top:60px;
+  margin-bottom:-30px;
+}
+
+.card {
+  border:1px white solid;
+  width:100%;
+  margin-left:55px;
+  margin-top:50px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container li{
+  list-style-type:none;
+  padding:.5em .5em .5em .5em;
+  display:inline-block;
+  text-align:left;
+}
+
+.firstcard {
+  margin-left:100px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+section {
+  width: 100%;
+  padding: 0;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #000;
+  height: 100vh;
+}
+
+.intro {
+  height: 90vh;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer {
+  padding: 1% 5%;
+  text-align:center;
+  background-color: #373B44;
+  color: white;
+}
+
+.sociallogo {
+  width:100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta {
+ padding-bottom:19px;
+ padding-top:21px;
+}
+
+.vsco {
+  padding-bottom:8.5px;
+  padding-top:8.5px;
+}
+
+.socialicondiv {
+  margin-left:200px;
+}
+
+.socialicon {
+  margin-right:15px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.header {
+  margin-left:70px;
+  margin-right:70px;
+  margin-top:20px;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  font-family: "Vidaloka";
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 40px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: grey;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: grey;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+  filter: grayscale(100%);
+  transition:.4s;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transition:.4s;
+}
+
+.socialiconclass {
+  text-decoration:none;
+}
+
+.sidebar{
+  will-change: min-height;
+}
+
+.sidebar__inner{
+  transform: translate(0, 0); /* For browsers don't support translate3d. */
+  transform: translate3d(0, 0, 0);
+  will-change: position, transform;
+}
+
