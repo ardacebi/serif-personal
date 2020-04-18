@@ -1,16 +1,16 @@
 {
-  "name": "ardacebicom",
+  "name": "serif-personal",
   "version": "1.0.0",
-  "description": "Website of Arda Çebi.",
+  "description": "A serif themed personal website template.",
   "author": "Arda Çebi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ardacebi/ardacebi.github.io.git"
+    "url": "git+https://github.com/ardacebi/serif-personal.git"
   },
   "bugs": {
-    "url": "https://github.com/ardacebi/ardacebi.github.io/issues"
+    "url": "https://github.com/ardacebi/serif-personal/issues"
   },
-  "homepage": "https://ardacebi.com",
+  "homepage": "https://github.com/ardacebi/serif-personal",
   "scripts": {
     "start": "parcel -p 8080 index.html",
     "test": "parcel index.html"
