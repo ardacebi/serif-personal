@@ -25,7 +25,7 @@
 <body>
 
   <div class="header">
-    <a href="#default" class="logo">Arda Çebi</a>
+    <a href="#default" class="logo">John Doe</a>
     <div class="header-right">
       <a class="active" href="#home">Home</a>
       <a href="#contact">Contact</a>
